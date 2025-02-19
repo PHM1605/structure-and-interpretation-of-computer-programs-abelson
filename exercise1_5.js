@@ -8,5 +8,5 @@ function test(x, y) {
 }
 
 console.log("Result: ", test(0, p()))
-// Answer: 2/ will be stucked in an infinite loop of trying to find p(); while 1/ will returns 0 immediately (... : y;) term isn't even called
+// Answer: 2/ will be stucked in an infinite loop of trying to find p(); while 1/ will returns 0 immediately, (... : y;) term isn't even called
 // My machine is using 2/
