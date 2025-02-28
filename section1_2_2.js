@@ -42,3 +42,4 @@ function first_denomination(kinds_of_coins) {
         : 0;
 }
 console.log("Số cách thối cho 1$ (100c): ", count_change(100))
+console.log("Số cách thối cho 11c: ", count_change(11))
