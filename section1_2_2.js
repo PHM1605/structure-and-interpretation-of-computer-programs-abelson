@@ -32,7 +32,7 @@ function cc(amount, kinds_of_coins) {
         : cc(amount, kinds_of_coins-1) + cc(amount-first_denomination(kinds_of_coins), kinds_of_coins) // số cách mà dùng "4 loại tiền trừ loại to nhất", cộng số cách "đã thối đồng tiền to nhất rồi"
 }
 
-// có 5 loại tiền 10c, 5c, 1c (sắp xếp theo thứ tự từ to tới nhỏ), bốc loại to nhất để thối trước => lượng còn lại là amount-10
+// có 5 loại tiền 50c, 25c, 10c, 5c, 1c (sắp xếp theo thứ tự từ to tới nhỏ), bốc loại to nhất để thối trước => lượng còn lại là amount-10
 function first_denomination(kinds_of_coins) {
     return kinds_of_coins === 1 ? 1
         : kinds_of_coins === 2 ? 5
@@ -42,4 +42,5 @@ function first_denomination(kinds_of_coins) {
         : 0;
 }
 console.log("Số cách thối cho 1$ (100c): ", count_change(100))
+console.log("Số cách thối cho 22c: ", count_change(22))
 console.log("Số cách thối cho 11c: ", count_change(11))

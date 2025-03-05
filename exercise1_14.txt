@@ -1,0 +1,9 @@
+Problem: Count change example for 11c -> 3 types of coins: 10c, 5c, 1c
+Tree structure:
+cc(11,3) i.e. coin change for 11$ using 3 types of coins
+cc(11,2) / cc(1,3) 
+cc(11,1) / cc(6,2) / cc(1,1)
+cc(1,1) / cc(6,1) / cc(1,2) / cc(1,1)
+-> number of ways: 4
+
+We already know when the amount is ~ ten-fold (1$=100c), the number of ways is: 292
